@@ -1,7 +1,11 @@
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #e5e5e5;
-  padding: 40px;
+  padding: 0;
+
+  font-size: 18px;
+  line-height: calc(24 / 18);
+  color: rgb(29, 29, 29);
 }
 
 /* wrapper */
@@ -17,124 +21,112 @@ body {
 
 /* Main content */
 .main-content {
-  padding-top: 100px;
-  padding-left: 88px;
-  padding-right: 216px;
-  padding-bottom: 108px;
+  padding-top: 40px;
+  padding-left: 44px;
+  padding-right: 72px;
+  padding-bottom: 40px;
 }
 
 /* About me */
 .about-me-container {
   margin-bottom: 64px;
+  padding-top: 20px;
+  padding-left: 44px;
+  padding-right: 44px;
+  padding-bottom: 20px;
+  background-color: rgba(238, 217, 217, 0.15);
 }
 
 .my-profession {
-  font-style: normal;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 28px;
   line-height: 17px;
   color: #000000;
   margin: 0 0 20px 0;
 }
 
 .my-name {
-  font-style: normal;
   font-weight: 700;
-  font-size: 43px;
+  font-size: 36px;
   line-height: 55px;
   color: #000000;
   margin: 0 0 28px 0;
-  width: 525px;
 }
 
 .my-descr {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  color: #595959;
-  width: 525px;
+  /* width: 525px; */
 }
 
 .main-content-title {
-  font-style: normal;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 26px;
   line-height: 27px;
   color: #000000;
-  margin: 0 0 8px 0;
+  margin: 0 0 14px 0;
+  text-align: center;
 }
 
 /* projects */
 .project-item {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 18px;
   color: #000000;
 }
-
+.project-item-container {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
 .project-list {
   padding: 0 0 0 16px;
   margin: 0;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-
-  color: #005fff;
 }
 
 .projects-container {
-  margin-bottom: 52px;
+  margin-bottom: 72px;
+  padding-left: 44px;
 }
 
 .project-item-link {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  text-decoration-line: underline;
   color: #005fff;
 }
 
 .project-item-descr {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 16px;
   color: #595959;
 }
 
 /* work-experience */
 
 .work-experience-container {
-  margin-bottom: 44px;
+  margin-bottom: 72px;
+  padding-left: 44px;
+  padding-right: 44px;
 }
 
 .work-experience-place {
   margin-bottom: 16px;
 }
 
-.work-experience-position {
-  margin: 12px 0 0 0px;
-  font-style: normal;
+.work-experience-position,
+.faculty {
+  margin: 0px 0 0 0px;
+
   font-weight: 700;
-  font-size: 16px;
+  font-size: 22px;
   line-height: 20px;
-  color: #000000;
+  color: rgba(0, 0, 0, 0.753);
 }
 
 .work-experience-company {
-  margin: 12px 0 0 0px;
+  margin: 0;
+  margin-bottom: 4px;
+  font-size: 22px;
   color: #6d9bf5;
 }
 
 .work-period {
   margin: 12px 0 8px 0px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
+  font-size: 18px;
   line-height: 15px;
   color: #a8a8a8;
 }
@@ -144,10 +136,8 @@ body {
 }
 
 .work-duties {
-  font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 18px;
   color: #595959;
 }
 
@@ -162,34 +152,106 @@ body {
 }
 
 .education-container {
-  margin: 40px 0 0 0;
+  margin-bottom: 72px;
+  padding-left: 44px;
+  padding-right: 44px;
+}
+
+.education-container .education-list {
+  gap: 20px;
+}
+
+.education-title {
+  margin: 0;
+}
+
+.education-item:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .faculty {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
+  font-size: 18px;
+}
+/* Languages */
+
+.languages-container {
+  padding-left: 44px;
+  padding-right: 44px;
 }
 
+.languages-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 8px;
+}
+.languages-item {
+  display: flex;
+  justify-content: space-between;
+}
+.languages-level {
+  font-size: 18px;
+  font-weight: 400;
+}
 /* sidebar */
 .sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
   width: 370px;
-  background: #e0ebfe;
+  background: rgba(224, 235, 254, 0.3);
 }
 
 .my-photo {
-  margin-top: 40px;
+  display: block;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+.skill-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 40px;
 }
 
-.contacts-container,
-.tech-skills-container {
-  margin: 48px 0 0 40px;
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
 }
+.icon {
+  stroke: #161d2a;
+  fill: transparent;
+}
+.phone-icon {
+  stroke-width: 2px;
+  scale: 1.2;
+}
+.telegram-icon {
+  fill: rgba(0, 89, 255, 0.56);
+  scale: 1.2;
+}
+.linkedin-icon {
+  border: 1px solid blue;
+  border-radius: 2px;
+  background-color: rgb(50, 124, 205);
+  background-color: rgba(0, 110, 255, 0.93);
 
+  fill: #fff;
+  scale: 0.8;
+}
 .sidebar-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 22px;
   line-height: 27px;
@@ -197,33 +259,24 @@ body {
   margin-bottom: 8px;
 }
 
-.contacts-type {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 24px;
-  color: #161d2a;
-  margin-right: 8px;
-}
-
 .contacts-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   margin: 0;
+
+  font-size: 16px;
 }
 
 .contacts-number {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
   color: #161d2a;
 }
 
 .contacts-mail {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
   color: #2979ff;
+}
+
+.contacts-list a {
 }
 
 /* skills-list */
@@ -233,17 +286,9 @@ body {
 }
 
 .skills-list-item {
-  color: #6d9bf5;
-}
-
-.skills-list-text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 20px;
   color: #161d2a;
 }
-
-.soft-skills-container {
-  margin: 44px 0 0 40px;
+.skills-list-item::marker {
+  color: #6d9bf5;
 }
