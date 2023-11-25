@@ -54,7 +54,7 @@ body {
 }
 
 .my-descr {
-  /* width: 525px; */
+  margin: 0;
 }
 
 .main-content-title {
@@ -201,7 +201,7 @@ body {
 .sidebar {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  /* gap: 120px; */
   padding-top: 40px;
   padding-bottom: 40px;
 
@@ -211,11 +211,15 @@ body {
 
 .my-photo {
   display: block;
-  height: auto;
+  height: 250px;
+  padding: 0 40px;
   object-fit: cover;
-  object-position: center;
+  object-position: top;
+  border: 1px solid transparent;
+  border-radius: 50%;
 }
 .skill-container {
+  margin-top: auto;
   display: flex;
   flex-direction: column;
   gap: 20px;
